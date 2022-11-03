@@ -1,0 +1,23 @@
+.auth-form {
+  height: 20vh;
+  width: 30%;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.from-group {
+  margin-bottom: 5%;
+  font-size: 0.8rem;
+}
+label {
+  font-size: 1.2rem;
+}
+.btn-success {
+  background-color: #212529;
+  border: none;
+}
+.btn-success:hover {
+  background-color: #3d3e3f;
+}

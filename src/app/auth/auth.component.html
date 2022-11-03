@@ -1,0 +1,43 @@
+<form
+  #authFrom="ngForm"
+  (ngSubmit)="onAuthFromSubmit(authFrom)"
+  class="auth-form"
+>
+  <div class="from-group">
+    <label for="">User</label>
+    <input
+      #user="ngModel"
+      [ngStyle]="{ 'border-color': !user.valid && user.dirty ? 'red' : 'gray' }"
+      required
+      name="user"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Password</label>
+    <input
+      #password="ngModel"
+      [ngStyle]="{
+        'border-color': !password.valid && password.dirty ? 'red' : 'gray'
+      }"
+      required
+      name="password"
+      ngModel
+      type="password"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <button
+      type="submit"
+      [disabled]="!authFrom.valid"
+      class="btn btn-success col-md-12 d-block m-auto"
+    >
+      Submit
+    </button>
+  </div>
+</form>

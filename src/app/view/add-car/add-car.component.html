@@ -1,0 +1,186 @@
+<form #form="ngForm" (ngSubmit)="onFormSubmit(form)">
+  <div class="from-group">
+    <label for="">Model</label>
+    <input
+      required
+      name="modelName"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+      #modelName="ngModel"
+      [ngStyle]="{
+        'border-color': !modelName.valid && modelName.dirty ? 'red' : 'gray'
+      }"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Mark</label>
+    <input
+      required
+      name="markName"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+      #markName="ngModel"
+      [ngStyle]="{
+        'border-color': !markName.valid && markName.dirty ? 'red' : 'gray'
+      }"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Year</label>
+    <input
+      required
+      name="year"
+      ngModel
+      type="date"
+      placeholder="Enter here"
+      class="form-control"
+      #year="ngModel"
+      [ngStyle]="{
+        'border-color': !year.valid && year.dirty ? 'red' : 'gray'
+      }"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Price</label>
+    <input
+      name="price"
+      ngModel
+      type="number"
+      placeholder="Enter here"
+      class="form-control"
+      required
+      #price="ngModel"
+      [ngStyle]="{
+        'border-color': !price.valid && price.dirty ? 'red' : 'gray'
+      }"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Seller Phone Number</label>
+    <input
+      name="sellerPhoneNumber"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+      required
+      #sellerPhoneNumber="ngModel"
+      [ngStyle]="{
+        'border-color':
+          !sellerPhoneNumber.valid && sellerPhoneNumber.dirty ? 'red' : 'gray'
+      }"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Arrives In</label>
+    <input
+      name="arrivesIn"
+      ngModel
+      type="date"
+      placeholder="Enter here"
+      class="form-control"
+      required
+      #arrivesIn="ngModel"
+      [ngStyle]="{
+        'border-color': !arrivesIn.valid && arrivesIn.dirty ? 'red' : 'gray'
+      }"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Mile</label>
+    <input
+      name="mile"
+      ngModel
+      type="number"
+      placeholder="Enter here"
+      class="form-control"
+      required
+      #mile="ngModel"
+      [ngStyle]="{
+        'border-color': !mile.valid && mile.dirty ? 'red' : 'gray'
+      }"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Vin Code</label>
+    <input
+      name="vinCode"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+      required
+      #vinCode="ngModel"
+      [ngStyle]="{
+        'border-color': !vinCode.valid && vinCode.dirty ? 'red' : 'gray'
+      }"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Drive Train Translation</label>
+    <input
+      name="driveTrainTranslation"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+      required
+      #driveTrainTranslation="ngModel"
+      [ngStyle]="{
+        'border-color':
+          !driveTrainTranslation.valid && driveTrainTranslation.dirty
+            ? 'red'
+            : 'gray'
+      }"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Fuel Type Translation</label>
+    <input
+      name="fuelTypeTranslation"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+      required
+      #fuelTypeTranslation="ngModel"
+      [ngStyle]="{
+        'border-color':
+          !fuelTypeTranslation.valid && fuelTypeTranslation.dirty
+            ? 'red'
+            : 'gray'
+      }"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Transmission Translation</label>
+    <input
+      name="transmissionTranslation"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+      required
+      #transmissionTranslation="ngModel"
+      [ngStyle]="{
+        'border-color':
+          !transmissionTranslation.valid && transmissionTranslation.dirty
+            ? 'red'
+            : 'gray'
+      }"
+    />
+  </div>
+  <div class="from-group">
+    <button
+      [disabled]="!form.valid"
+      type="submit"
+      class="btn btn-success col-md-9 d-block m-auto"
+    >
+      Save
+    </button>
+  </div>
+</form>

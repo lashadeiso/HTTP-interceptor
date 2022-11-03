@@ -1,0 +1,130 @@
+<form #form="ngForm" (ngSubmit)="onFormSubmit(form)">
+  <h3>Update Car</h3>
+
+  <div class="from-group d-none">
+    <label for="">id</label>
+    <input
+      name="id"
+      ngModel
+      type="hidden"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+
+  <div class="from-group">
+    <label for="">Model</label>
+    <input
+      name="modelName"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Mark</label>
+    <input
+      name="markName"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Year</label>
+    <input
+      name="year"
+      ngModel
+      type="date"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Price</label>
+    <input
+      name="price"
+      ngModel
+      type="number"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Seller Phone Number</label>
+    <input
+      name="sellerPhoneNumber"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Arrives In</label>
+    <input
+      name="arrivesIn"
+      ngModel
+      type="date"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Mile</label>
+    <input
+      name="mile"
+      ngModel
+      type="number"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Vin Code</label>
+    <input
+      name="vinCode"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Drive Train Translation</label>
+    <input
+      name="driveTrainTranslation"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Fuel Type Translation</label>
+    <input
+      name="fuelTypeTranslation"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <label for="">Transmission Translation</label>
+    <input
+      name="transmissionTranslation"
+      ngModel
+      type="text"
+      placeholder="Enter here"
+      class="form-control"
+    />
+  </div>
+  <div class="from-group">
+    <button type="submit" class="btn btn-success col-md-9 d-block m-auto">
+      Update
+    </button>
+  </div>
+</form>

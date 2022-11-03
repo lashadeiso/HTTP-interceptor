@@ -1,0 +1,25 @@
+.from-group {
+  margin-bottom: 2%;
+  font-size: 0.8rem;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+input {
+  font-size: 0.5rem;
+}
+
+.btn-success {
+  background-color: #212529;
+  border: none;
+}
+.btn-success:hover {
+  background-color: #3d3e3f;
+}
+
+.btn-warning {
+  background-color: #212529;
+  border: none;
+}
+.btn-warning:hover {
+  background-color: #3d3e3f;
+}

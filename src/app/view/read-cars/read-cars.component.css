@@ -1,0 +1,14 @@
+.head {
+  display: flex;
+  height: 7vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-success {
+  background-color: #212529;
+  border: none;
+}
+.btn-success:hover {
+  background-color: #3d3e3f;
+}

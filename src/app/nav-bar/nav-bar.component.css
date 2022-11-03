@@ -1,0 +1,13 @@
+.nav-link {
+  font-size: 1.2rem;
+  width: 8rem;
+}
+.auth {
+  font-size: 1.2rem;
+  color: rgb(214, 206, 206);
+}
+
+.auth:hover {
+  color: whitesmoke;
+  cursor: pointer;
+}
